@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Yoga App</title>
+</head>
+<body>
+    <h1>Debug Information</h1>
+    <div id="debug-info"></div>
+    
+    <script src="poses-data.js"></script>
+    <script>
+        const debugDiv = document.getElementById('debug-info');
+        
+        function addDebugInfo(text) {
+            debugDiv.innerHTML += '<p>' + text + '</p>';
+        }
+        
+        addDebugInfo('Page loaded');
+        
+        if (typeof YOGA_POSES_DATA !== 'undefined') {
+            addDebugInfo('✅ YOGA_POSES_DATA is defined');
+            addDebugInfo('Data type: ' + typeof YOGA_POSES_DATA);
+            addDebugInfo('Is array: ' + Array.isArray(YOGA_POSES_DATA));
+            addDebugInfo('Length: ' + YOGA_POSES_DATA.length);
+            
+            if (YOGA_POSES_DATA.length > 0) {
+                addDebugInfo('First pose: ' + JSON.stringify(YOGA_POSES_DATA[0], null, 2));
+                
+                // Check difficulty values
+                const difficulties = YOGA_POSES_DATA.map(p => p.difficulty).filter((v, i, a) => a.indexOf(v) === i);
+                addDebugInfo('Unique difficulties: ' + JSON.stringify(difficulties));
+            }
+        } else {
+            addDebugInfo('❌ YOGA_POSES_DATA is not defined');
+        }
+    </script>
+</body>
+</html>

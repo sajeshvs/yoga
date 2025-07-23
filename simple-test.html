@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Simple Poses</title>
+    <style>
+        .pose-card { border: 1px solid #ccc; margin: 10px; padding: 10px; }
+        .poses-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Simple Test</h1>
+    <div id="poses-grid" class="poses-grid"></div>
+    
+    <script>
+        const testPoses = [
+            {
+                id: "test-1",
+                englishName: "Test Pose 1",
+                malayalamName: "ടെസ്റ്റ് ആസനം 1",
+                difficulty: "Beginner",
+                time: "30 seconds",
+                timeToComplete: "1 week",
+                imageUrl: "https://via.placeholder.com/300x200"
+            },
+            {
+                id: "test-2",
+                englishName: "Test Pose 2",
+                malayalamName: "ടെസ്റ്റ് ആസനം 2",
+                difficulty: "Intermediate",
+                time: "45 seconds",
+                timeToComplete: "2 weeks",
+                imageUrl: "https://via.placeholder.com/300x200"
+            }
+        ];
+        
+        function createCard(pose) {
+            return `
+                <div class="pose-card">
+                    <h3>${pose.englishName}</h3>
+                    <p>${pose.malayalamName}</p>
+                    <p>Difficulty: ${pose.difficulty}</p>
+                    <p>Time: ${pose.time}</p>
+                    <img src="${pose.imageUrl}" alt="${pose.englishName}" style="width: 100%; max-width: 200px;">
+                </div>
+            `;
+        }
+        
+        const grid = document.getElementById('poses-grid');
+        grid.innerHTML = testPoses.map(pose => createCard(pose)).join('');
+        
+        console.log('Simple test rendered:', testPoses.length, 'poses');
+    </script>
+</body>
+</html>

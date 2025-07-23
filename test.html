@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test JSON Loading</title>
+</head>
+<body>
+    <h1>Testing JSON Load</h1>
+    <div id="result"></div>
+    
+    <script>
+        async function testLoad() {
+            const resultDiv = document.getElementById('result');
+            
+            try {
+                console.log('Testing fetch...');
+                resultDiv.innerHTML = 'Loading...';
+                
+                const response = await fetch('./yoga-poses.json');
+                console.log('Response:', response);
+                console.log('Status:', response.status);
+                console.log('OK:', response.ok);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                console.log('Data loaded:', data.length, 'poses');
+                
+                resultDiv.innerHTML = `
+                    <p>✅ Success! Loaded ${data.length} poses</p>
+                    <p>First pose: ${data[0].englishName}</p>
+                    <p>Last pose: ${data[data.length-1].englishName}</p>
+                `;
+                
+            } catch (error) {
+                console.error('Error:', error);
+                resultDiv.innerHTML = `❌ Error: ${error.message}`;
+            }
+        }
+        
+        testLoad();
+    </script>
+</body>
+</html>

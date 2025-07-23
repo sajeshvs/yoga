@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Poses - Standalone App</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-container">
+        <div class="loader"></div>
+        <p id="loading-text">Loading Poses...</p>
+    </div>
+
+    <!-- Main App Container -->
+    <div id="app-container" class="app-container" style="display: none;">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-bg"></div>
+            <div class="header-controls">
+                <button id="language-toggle" class="language-switcher">
+                    <i class="material-icons">language</i>
+                    <span id="language-text">മലയാളം</span>
+                </button>
+            </div>
+            <div class="header-content">
+                <i class="material-icons header-icon">self_improvement</i>
+                <h1 id="main-title">Yoga Asanas</h1>
+                <p id="main-subtitle">Explore 80 traditional yoga poses for mind and body wellness.</p>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span id="total-poses" class="stat-number">0</span>
+                        <span class="stat-label">Poses</span>
+                    </div>
+                    <div class="stat-item">
+                        <span id="favorites-count" class="stat-number">0</span>
+                        <span id="favorites-label" class="stat-label">Favorites</span>
+                    </div>
+                    <div class="stat-item">
+                        <span id="beginner-count" class="stat-number">0</span>
+                        <span id="beginner-label" class="stat-label">Beginner</span>
+                    </div>
+                    <div class="stat-item">
+                        <span id="advanced-count" class="stat-number">0</span>
+                        <span id="advanced-label" class="stat-label">Advanced</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Filters -->
+        <div class="filters-container">
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input 
+                    type="text" 
+                    id="search-input"
+                    placeholder="Search for yoga poses..."
+                />
+            </div>
+            <div class="difficulty-filter">
+                <i class="material-icons">filter_list</i>
+                <select id="difficulty-select">
+                    <option value="All">എല്ലാ തലങ്ങളും</option>
+                    <option value="Beginner">തുടക്കക്കാരൻ</option>
+                    <option value="Intermediate">ഇടത്തരം</option>
+                    <option value="Advanced">വിദഗ്ദ്ധൻ</option>
+                </select>
+            </div>
+            <div class="favorites-toggle">
+                <button id="favorites-btn" class="favorites-btn">
+                    <i class="material-icons">favorite</i>
+                    <span id="favorites-text">Favorites</span>
+                    <span id="favorites-badge" class="favorites-count" style="display: none;">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Poses Grid -->
+        <main id="poses-grid" class="poses-grid">
+            <!-- Poses will be dynamically inserted here -->
+        </main>
+
+        <!-- No Results Message -->
+        <div id="no-results" class="no-results" style="display: none;">
+            <p id="no-results-text">No poses found. Try adjusting your search or filters.</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="pose-modal" class="modal-backdrop" style="display: none;">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close-btn">
+                <i class="material-icons">close</i>
+            </button>
+            <div class="modal-grid">
+                <div class="modal-image-container">
+                    <img id="modal-image" src="" alt="" class="modal-image">
+                    <button id="modal-favorite-btn" class="favorite-btn">
+                        <i class="material-icons">favorite_border</i>
+                    </button>
+                </div>
+                <div class="modal-instructions-container">
+                    <h2 id="modal-title">Pose Name</h2>
+                    <p id="modal-subtitle">Subtitle</p>
+                    
+                    <div class="modal-info-grid">
+                        <div class="modal-info-item">
+                            <i class="material-icons">schedule</i>
+                            <span id="modal-time-label">Time:</span>
+                            <strong id="modal-time">0</strong>
+                        </div>
+                        <div class="modal-info-item">
+                            <i class="material-icons">trending_up</i>
+                            <span id="modal-difficulty-label">Difficulty:</span>
+                            <strong id="modal-difficulty">-</strong>
+                        </div>
+                        <div class="modal-info-item">
+                            <i class="material-icons">event</i>
+                            <span id="modal-completion-label">Time to Complete:</span>
+                            <strong id="modal-completion">-</strong>
+                        </div>
+                    </div>
+
+                    <h4 id="modal-instructions-heading" class="instructions-heading">Instructions</h4>
+                    <ol id="modal-instructions" class="instructions-list">
+                        <!-- Instructions will be populated here -->
+                    </ol>
+
+                    <div class="additional-info-grid">
+                        <div class="info-section">
+                            <h4 id="modal-health-benefits-heading" class="section-heading">Health Benefits</h4>
+                            <ul id="modal-health-benefits" class="health-benefits-list">
+                                <!-- Health benefits will be populated here -->
+                            </ul>
+                        </div>
+
+                        <div class="info-section">
+                            <h4 id="modal-breathing-heading" class="section-heading">Breathing Technique</h4>
+                            <p id="modal-breathing" class="breathing-text">
+                                <!-- Breathing instructions will be populated here -->
+                            </p>
+                        </div>
+
+                        <div class="info-section">
+                            <h4 id="modal-recommended-heading" class="section-heading">Recommended For</h4>
+                            <p id="modal-recommended" class="recommended-text">
+                                <!-- Recommended for will be populated here -->
+                            </p>
+                        </div>
+
+                        <div class="info-section warning">
+                            <h4 id="modal-contraindications-heading" class="section-heading warning-title">Contraindications</h4>
+                            <p id="modal-contraindications" class="contraindications-text">
+                                <!-- Contraindications will be populated here -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="poses-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
