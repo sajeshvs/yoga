@@ -1195,7 +1195,186 @@ body {
     box-shadow: 0 2px 6px rgba(99, 102, 241, 0.2);
 }
 
-/* Responsive Design */
+/* Step Navigation Styles */
+.step-navigation {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.step-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.step-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    min-width: 100px;
+    justify-content: center;
+}
+
+.step-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.step-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.step-btn .material-icons {
+    font-size: 18px;
+}
+
+.step-indicators {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.step-indicator {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.step-indicator:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.step-indicator.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: #fff;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.6);
+}
+
+.step-indicator::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.step-indicator:hover::after {
+    opacity: 1;
+}
+
+.step-description {
+    text-align: center;
+    color: white;
+}
+
+.step-description h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.step-description p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive step navigation */
+@media (max-width: 768px) {
+    .step-controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .step-indicators {
+        order: 2;
+    }
+    
+    .step-btn {
+        min-width: 120px;
+    }
+    
+    .prev-step {
+        order: 1;
+    }
+    
+    .next-step {
+        order: 3;
+    }
+    
+    .step-indicator {
+        width: 35px;
+        height: 35px;
+        font-size: 13px;
+    }
+    
+    .step-description h4 {
+        font-size: 16px;
+    }
+    
+    .step-description p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .step-navigation {
+        padding: 15px;
+    }
+    
+    .step-indicators {
+        gap: 8px;
+    }
+    
+    .step-indicator {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+}
 @media (max-width: 1024px) {
     .modal-content {
         max-width: 95vw;
