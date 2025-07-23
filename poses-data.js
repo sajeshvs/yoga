@@ -220,7 +220,7 @@ const YOGA_POSES_DATA = [
     "englishName": "Crescent Lunge",
     "malayalamName": "അഷ്ട ചന്ദ്രാസനം",
     "sanskritName": "Ashta Chandrasana",
-    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/prophet-data.appspot.com/o/yogaPoses%2FLungeCrescent_L1.png?alt=media&token=96a1b681-b00e-4128-8bc8-7ae4601bf041",
     "difficulty": "Beginner",
     "time": "30-60 seconds per side",
     "timeToComplete": "1 Week",
