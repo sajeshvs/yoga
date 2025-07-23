@@ -3804,40 +3804,14 @@ const YOGA_POSES_DATA = [
         "സങ്കീർണ്ണമായ ഏകീകൃത പ്രവർത്തനത്തിൽ ശ്വാസം, അലൈൻമെന്റ്, ശക്തി, വഴക്കം എന്നിവ ഏകോപിപ്പിക്കാൻ പരിശീലകനെ വെല്ലുവിളിക്കുന്നതിലൂടെ മൊത്തത്തിലുള്ള ശരീര ഏകീകരണവും മൂവ്മെന്റ് എഫിഷ്യൻസിയും വർധിപ്പിക്കുന്നു"
       ]
     },
-    "contraindications": [
-      "Avoid completely if experiencing acute knee injuries including ACL tears, meniscus damage, or kneecap dislocation in the Hero Pose leg, as the kneeling position places significant stress on compromised knee structures",
-      "Not recommended for individuals with severe hamstring injuries, strains, or tears in the extended leg, as the intense vertical stretching can severely aggravate existing muscle damage",
-      "Exercise extreme caution with ankle injuries or limited ankle dorsiflexion in the folded leg, as the Hero Pose positioning requires adequate ankle flexibility and can create discomfort",
-      "Avoid if experiencing acute lower back pain, herniated discs, or recent spinal injuries, as maintaining spinal extension against the resistance of the raised leg can stress the spine",
-      "Not suitable for those with severe hip injuries or hip replacement, as the asymmetrical positioning places different demands on each hip joint and can affect healing",
-      "Contraindicated for individuals with severe shoulder impingement or rotator cuff injuries, as gripping and holding the raised foot requires significant shoulder stability and strength",
-      "Avoid if experiencing severe sciatica, particularly if symptoms are aggravated by hip flexion or hamstring stretching, as the pose specifically targets these areas",
-      "Not recommended for those with severe osteoporosis in the spine, as the spinal extension required to maintain the pose could increase compression forces on vertebrae",
-      "Exercise caution during pregnancy, particularly in later trimesters, as the asymmetrical positioning and intense stretching may become uncomfortable",
-      "Avoid if experiencing severe balance disorders or conditions affecting proprioception, as the challenging asymmetrical position requires significant stability and body control",
-      "Not suitable for individuals with severe arthritis in the knees, hips, or ankles, as the pose places significant stress on these joints in complex positions",
-      "Contraindicated for those with severe anxiety or panic disorders related to intense physical sensations, as the pose creates significant discomfort that requires skillful management",
-      "Avoid during acute flare-ups of inflammatory conditions affecting the joints, as the intense positioning may exacerbate inflammation and increase pain",
-      "Not recommended for beginners or those without adequate preparation in Hero Pose and basic hamstring flexibility, as the intensity requires progressive development",
-      "Exercise extreme caution with severe circulation disorders or varicose veins, as the asymmetrical positioning may affect blood flow and circulation patterns"
-    ],
-    "recommendedFor": [
-      "Intermediate to advanced practitioners seeking to explore deep hamstring flexibility while maintaining spinal strength and postural integrity",
-      "Students who have mastered basic Hero Pose and want to progress to more challenging variations that combine multiple therapeutic benefits",
-      "Athletes and active individuals, particularly runners and cyclists, who need intensive hamstring stretching combined with hip flexor work for balanced lower body flexibility",
-      "Practitioners working on developing advanced concentration and mental resilience through poses that require sustained focus while managing intense physical sensations",
-      "Students preparing for advanced seated poses and arm balances by building the core strength, flexibility, and proprioceptive awareness necessary for complex positions",
-      "Individuals with chronic lower back tension who have been cleared by healthcare providers and want to explore therapeutic spinal strengthening combined with posterior chain release",
-      "Advanced students interested in developing exceptional grip strength and forearm endurance through poses that require sustained holding under resistance",
-      "Practitioners seeking comprehensive lower extremity flexibility that addresses both anterior and posterior muscle groups simultaneously",
-      "Students working on improving postural awareness and spinal strength through poses that challenge the ability to maintain alignment under asymmetrical loads",
-      "Experienced practitioners preparing for traditional seated meditation postures by developing the hip flexibility and spinal strength necessary for extended sitting",
-      "Individuals interested in exploring the therapeutic applications of asymmetrical positioning for addressing bilateral imbalances in flexibility and strength",
-      "Advanced students working on breath control and respiratory function through poses that require deeper breathing patterns to maintain challenging positions",
-      "Practitioners with adequate preparation in basic forward folding and kneeling poses who want to explore more complex integrated movements",
-      "Students seeking to develop patience and emotional regulation through demanding poses that require working skillfully with intensity and discomfort",
-      "Anyone with healthy knees and adequate hamstring flexibility who wants to explore advanced seated pose variations that provide multiple therapeutic benefits"
-    ]
+    "contraindications": {
+      "english": "Avoid completely if experiencing acute knee injuries including ACL tears, meniscus damage, or kneecap dislocation in the Hero Pose leg, as the kneeling position places significant stress on compromised knee structures. Not recommended for individuals with severe hamstring injuries, strains, or tears in the extended leg, as the intense vertical stretching can severely aggravate existing muscle damage. Exercise extreme caution with ankle injuries or limited ankle dorsiflexion in the folded leg, as the Hero Pose positioning requires adequate ankle flexibility and can create discomfort.",
+      "malayalam": "ഹീറോ പോസ് കാലിൽ ACL കീറലുകൾ, മെനിസ്കസ് കേടുപാടുകൾ, അല്ലെങ്കിൽ കാൽമുട്ടിന്റെ തൊപ്പി സ്ഥാനഭ്രംശം ഉൾപ്പെടെയുള്ള നിശിത കാൽമുട്ട് പരിക്കുകൾ അനുഭവിക്കുന്നുണ്ടെങ്കിൽ പൂർണ്ണമായും ഒഴിവാക്കുക, കാരണം മുട്ടുകുത്തുന്ന സ്ഥാനം വിട്ടുവീഴ്ച ചെയ്യപ്പെട്ട കാൽമുട്ട് ഘടനകളിൽ കാര്യമായ സമ്മർദ്ദം ചെലുത്തുന്നു. നീട്ടിയ കാലിൽ ഗുരുതരമായ ഹാംസ്ട്രിംഗ് പരിക്കുകൾ, സ്ട്രെയിനുകൾ, അല്ലെങ്കിൽ കീറലുകൾ ഉള്ള വ്യക്തികൾക്ക് ശുപാർശ ചെയ്യുന്നില്ല, കാരണം തീവ്രമായ ലംബമായ സ്ട്രെച്ചിംഗ് നിലവിലുള്ള പേശീ കേടുപാടുകൾ ഗുരുതരമായി വർദ്ധിപ്പിക്കും."
+    },
+    "recommendedFor": {
+      "english": "Intermediate to advanced practitioners seeking to explore deep hamstring flexibility while maintaining spinal strength and postural integrity. Students who have mastered basic Hero Pose and want to progress to more challenging variations that combine multiple therapeutic benefits. Athletes and active individuals, particularly runners and cyclists, who need intensive hamstring stretching combined with hip flexor work for balanced lower body flexibility.",
+      "malayalam": "സ്പൈനൽ ശക്തിയും പോസ്ച്യറൽ സമഗ്രതയും നിലനിർത്തിക്കൊണ്ട് ആഴത്തിലുള്ള ഹാംസ്ട്രിംഗ് വഴക്കം പര്യവേക്ഷണം ചെയ്യാൻ ആഗ്രഹിക്കുന്ന ഇന്റർമീഡിയറ്റ് മുതൽ അഡ്വാൻസ്ഡ് വരെയുള്ള പരിശീലകർ. അടിസ്ഥാന ഹീറോ പോസ് ആധിപത്യം സ്ഥാപിച്ച് ഒന്നിലധികം ചികിത്സാപരമായ ഗുണങ്ങൾ സംയോജിപ്പിക്കുന്ന കൂടുതൽ വെല്ലുവിളി നിറഞ്ഞ വ്യതിയാനങ്ങളിലേക്ക് പുരോഗമിക്കാൻ ആഗ്രഹിക്കുന്ന വിദ്യാർത്ഥികൾ. സന്തുലിതമായ താഴത്തെ ശരീര വഴക്കത്തിനായി ഹിപ് ഫ്ലെക്സർ വർക്കുമായി സംയോജിപ്പിച്ച തീവ്രമായ ഹാംസ്ട്രിംഗ് സ്ട്രെച്ചിംഗ് ആവശ്യമുള്ള അത്ലറ്റുകളും സജീവ വ്യക്തികളും, പ്രത്യേകിച്ച് ഓട്ടക്കാരും സൈക്കിൾ യാത്രികരും."
+    }
   },
   {
     "id": "pose-62",
@@ -5930,6 +5904,58 @@ const YOGA_POSES_DATA = [
         "വർത്തമാന നിമിഷ അവബോധം വളർത്തുന്ന സൌമ്യമായ ചലനത്തിലൂടെയും ശ്വാസ-കേന്ദ്രീകൃത പരിശീലനങ്ങളിലൂടെയും മൈൻഡ്ഫുൾനെസും സമ്മർദ്ദ കുറയ്ക്കലും തേടുന്ന ആളുകൾ",
         "പുനരുജ്ജീവിപ്പിക്കുന്ന ക്ലാസുകൾ, സമ്മർദ്ദ ആശ്വാസ ക്രമങ്ങൾ, സൌമ്യമായ ചലന സെഷനുകൾ എന്നിവയിൽ ഉൾപ്പെടുത്തുന്നതിന് ആക്സസ് ചെയ്യാവുന്ന ചികിത്സാ ആസനങ്ങൾ തേടുന്ന യോഗാ അധ്യാപകരും തെറാപ്പിസ്റ്റുകളും"
       ]
+    }
+  },
+  {
+    "id": "pose-79",
+    "englishName": "Low Lunge (Anjaneyasana)",
+    "malayalamName": "അഞ്ജനേയാസനം",
+    "sanskritName": "Anjaneyasana",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/prophet-data.appspot.com/o/yogaPoses%2FWarriorIKneeling_L1.png?alt=media&token=691a6ca4-e585-4d92-b042-f12550910661",
+    "difficulty": "Beginner",
+    "time": "30-60 seconds per side",
+    "timeToComplete": "1 Week",
+    "instructions": {
+      "english": "1. **Starting Position:**\n\t• Begin in Downward-Facing Dog or step back into a lunge from standing.\n\t• Step your right foot forward between your hands, ensuring your knee is directly over your ankle.\n\n2. **Lower the Back Knee:**\n\t• Gently lower your left knee to the ground.\n\t• Untuck your left toes and let the top of your left foot rest on the mat.\n\n3. **Find Your Foundation:**\n\t• Press firmly through your right foot, ensuring your knee remains over your ankle.\n\t• Keep your hips squared toward the front of the mat.\n\n4. **Lift the Torso:**\n\t• Inhale and lift your torso upright, bringing your hands to your right thigh or reaching your arms overhead.\n\t• Lengthen through the crown of your head.\n\n5. **Deepen the Stretch:**\n\t• Gently press your hips forward to deepen the hip flexor stretch.\n\t• Keep your front knee aligned over your ankle.\n\n6. **Hold and Breathe:**\n\t• Hold for 30-60 seconds, breathing deeply.\n\t• Focus on opening through the front of your left hip.\n\n7. **Switch Sides:**\n\t• Return to Downward-Facing Dog and repeat on the other side.",
+      "malayalam": "1. **ആരംഭ നില:**\n\t• അധോമുഖ ശ്വാനാസനത്തിൽ നിന്ന് ആരംഭിക്കുകയോ നിൽക്കുന്ന സ്ഥിതിയിൽ നിന്ന് ലഞ്ചിലേക്ക് പിന്നോട്ട് പോകുകയോ ചെയ്യുക.\n\t• വലത് പാദം കൈകൾക്കിടയിൽ മുന്നോട്ട് വെക്കുക, കാൽമുട്ട് കണങ്കാലിന് നേരിട്ട് മുകളിലാണെന്ന് ഉറപ്പാക്കുക.\n\n2. **പിന്നിലെ കാൽമുട്ട് താഴ്ത്തുക:**\n\t• ഇടത് കാൽമുട്ട് സൗമ്യമായി നിലത്തേക്ക് താഴ്ത്തുക.\n\t• ഇടത് കാൽവിരലുകൾ അഴിച്ച് ഇടത് പാദത്തിന്റെ മുകൾഭാഗം മാറ്റിൽ വിശ്രമിക്കാൻ അനുവദിക്കുക.\n\n3. **അടിത്തറ കണ്ടെത്തുക:**\n\t• വലത് പാദത്തിലൂടെ ശക്തമായി അമർത്തുക, കാൽമുട്ട് കണങ്കാലിന് മുകളിൽ തുടരുന്നുവെന്ന് ഉറപ്പാക്കുക.\n\t• ഇടുപ്പുകൾ മാറ്റിന്റെ മുൻവശത്തേക്ക് ചതുരാകൃതിയിൽ നിലനിർത്തുക.\n\n4. **ഉടൽ ഉയർത്തുക:**\n\t• ശ്വാസം ഉള്ളിലേക്ക് എടുത്ത് ഉടൽ നിവർത്തുക, കൈകൾ വലത് തുടയിൽ വെക്കുകയോ കൈകൾ തലയ്ക്ക് മുകളിലേക്ക് എത്തിക്കുകയോ ചെയ്യുക.\n\t• തലയുടെ കിരീടം വരെ നീളം നൽകുക.\n\n5. **വലിച്ചിൽ ആഴത്തിലാക്കുക:**\n\t• ഹിപ് ഫ്ലെക്സർ സ്ട്രെച്ച് ആഴത്തിലാക്കാൻ ഇടുപ്പുകൾ സൗമ്യമായി മുന്നോട്ട് അമർത്തുക.\n\t• മുൻ കാൽമുട്ട് കണങ്കാലിന് മുകളിൽ വിന്യസിച്ച് നിലനിർത്തുക.\n\n6. **പിടിച്ച് ശ്വസിക്കുക:**\n\t• ആഴത്തിൽ ശ്വസിച്ചുകൊണ്ട് 30-60 സെക്കൻഡ് പിടിക്കുക.\n\t• ഇടത് ഇടുപ്പിന്റെ മുൻഭാഗത്ത് തുറക്കുന്നതിൽ ശ്രദ്ധ കേന്ദ്രീകരിക്കുക.\n\n7. **വശങ്ങൾ മാറുക:**\n\t• അധോമുഖ ശ്വാനാസനത്തിലേക്ക് മടങ്ങുകയും മറ്റേ വശത്ത് ആവർത്തിക്കുകയും ചെയ്യുക."
+    },
+    "healthBenefits": {
+      "english": [
+        "Deeply stretches the hip flexors, particularly the psoas muscle.",
+        "Opens and stretches the front of the thighs (quadriceps).",
+        "Strengthens the legs and improves balance.",
+        "Opens the chest and shoulders when arms are lifted.",
+        "Improves hip flexibility and mobility.",
+        "Helps counteract the effects of prolonged sitting.",
+        "Prepares the body for deeper backbends.",
+        "Builds strength in the core and stabilizing muscles.",
+        "Improves posture and spinal alignment.",
+        "Energizes the body and improves focus."
+      ],
+      "malayalam": [
+        "ഹിപ് ഫ്ലെക്സറുകൾ, പ്രത്യേകിച്ച് സോവാസ് പേശിക്ക് ആഴത്തിലുള്ള വലിച്ചിൽ നൽകുന്നു.",
+        "തുടകളുടെ മുൻഭാഗം (ക്വാഡ്രിസെപ്സ്) തുറക്കുകയും വലിക്കുകയും ചെയ്യുന്നു.",
+        "കാലുകളെ ബലപ്പെടുത്തുകയും ബാലൻസ് മെച്ചപ്പെടുത്തുകയും ചെയ്യുന്നു.",
+        "കൈകൾ ഉയർത്തുമ്പോൾ നെഞ്ചും തോളുകളും തുറക്കുന്നു.",
+        "ഇടുപ്പിന്റെ വഴക്കവും ചലനാത്മകതയും മെച്ചപ്പെടുത്തുന്നു.",
+        "നീണ്ട ഇരിപ്പിന്റെ പ്രభാവങ്ങളെ പ്രതിരോധിക്കാൻ സഹായിക്കുന്നു.",
+        "ആഴത്തിലുള്ള പിന്നോട്ട് വളവുകൾക്ക് ശരീരത്തെ തയ്യാറാക്കുന്നു.",
+        "കോറിലും സ്ഥിരീകരിക്കുന്ന പേശികളിലും ശക്തി വർദ്ധിപ്പിക്കുന്നു.",
+        "ഭാവവും നട്ടെല്ലിന്റെ വിന്യാസവും മെച്ചപ്പെടുത്തുന്നു.",
+        "ശരീരത്തെ ഊർജ്ജസ്വലമാക്കുകയും ഏകാഗ്രത മെച്ചപ്പെടുത്തുകയും ചെയ്യുന്നു."
+      ]
+    },
+    "breathing": {
+      "english": "Begin with a deep inhale as you step into the lunge position. Exhale as you lower your back knee to the ground. Inhale to lift your torso and extend your arms if desired. Maintain steady, rhythmic breathing throughout the hold, using each exhale to gently deepen the hip flexor stretch while keeping the front knee stable.",
+      "malayalam": "ലഞ്ച് സ്ഥാനത്തേക്ക് കാൽ വെക്കുമ്പോൾ ആഴത്തിലുള്ള ശ്വാസം ഉള്ളിലേക്ക് എടുത്ത് ആരംഭിക്കുക. പിന്നിലെ കാൽമുട്ട് നിലത്തേക്ക് താഴ്ത്തുമ്പോൾ ശ്വാസം പുറത്തേക്ക് വിടുക. ഉടൽ ഉയർത്താനും ആവശ്യമെങ്കിൽ കൈകൾ നീട്ടാനും ശ്വാസം ഉള്ളിലേക്ക് എടുക്കുക. മുൻ കാൽമുട്ട് സ്ഥിരമായി നിലനിർത്തിക്കൊണ്ട് ഓരോ ശ്വാസം പുറത്തേക്ക് വിടുന്നതും ഹിപ് ഫ്ലെക്സർ സ്ട്രെച്ച് സൗമ്യമായി ആഴത്തിലാക്കാൻ ഉപയോഗിച്ചുകൊണ്ട് പിടിക്കുന്നതിലുടനീളം സ്ഥിരവും ചാരുതയുള്ളതുമായ ശ്വാസം നിലനിർത്തുക."
+    },
+    "contraindications": {
+      "english": "Avoid this pose if you have acute knee injuries or recent knee surgery. Those with hip injuries should practice with caution and use props for support. If you have lower back pain, avoid deep hip flexor stretching and keep a more upright torso. Pregnant women should practice with wider leg spacing and avoid deep twisting variations.",
+      "malayalam": "നിശിത കാൽമുട്ട് പരിക്കുകളോ സമീപകാല കാൽമുട്ട് ശസ്ത്രക്രിയയോ ഉണ്ടെങ്കിൽ ഈ ആസനം ഒഴിവാക്കുക. ഇടുപ്പ് പരിക്കുകളുള്ളവർ ജാഗ്രതയോടെ പരിശീലിക്കുകയും പിന്തുണയ്ക്കായി പ്രോപ്പുകൾ ഉപയോഗിക്കുകയും വേണം. നടുവേദനയുണ്ടെങ്കിൽ ആഴത്തിലുള്ള ഹിപ് ഫ്ലെക്സർ സ്ട്രെച്ചിംഗ് ഒഴിവാക്കുകയും കൂടുതൽ നിവർന്ന ഉടൽ നിലനിർത്തുകയും ചെയ്യുക. ഗർഭിണികൾ കൂടുതൽ വീതിയുള്ള കാൽ അകലത്തിൽ പരിശീലിക്കുകയും ആഴത്തിലുള്ള വളച്ചിൽ വ്യതിയാനങ്ങൾ ഒഴിവാക്കുകയും വേണം."
+    },
+    "recommendedFor": {
+      "english": "Perfect for athletes and runners who need to stretch tight hip flexors, office workers who sit for long periods, anyone preparing for backbends, beginners building flexibility, and those seeking to improve posture and counteract the effects of modern sedentary lifestyle. Excellent preparation pose for deeper hip opening sequences.",
+      "malayalam": "ഇറുകിയ ഹിപ് ഫ്ലെക്സറുകൾ വലിക്കേണ്ട അത്ലറ്റുകൾക്കും ഓട്ടക്കാർക്കും, നീണ്ട സമയം ഇരിക്കുന്ന ഓഫീസ് ജോലിക്കാർക്കും, പിന്നോട്ട് വളവുകൾക്ക് തയ്യാറെടുക്കുന്ന ആർക്കും, വഴക്കം വർദ്ധിപ്പിക്കുന്ന തുടക്കക്കാർക്കും, ഭാവം മെച്ചപ്പെടുത്താനും ആധുനിക ഇരിപ്പ് ജീവിതശൈലിയുടെ പ്രഭാവങ്ങളെ പ്രതിരോധിക്കാനും ആഗ്രഹിക്കുന്നവർക്കും അനുയോജ്യം. ആഴത്തിലുള്ള ഹിപ് ഓപ്പണിംഗ് സീക്വൻസുകൾക്കുള്ള മികച്ച തയ്യാറെടുപ്പ് ആസനം."
     }
   }
 ]
