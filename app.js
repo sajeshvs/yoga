@@ -560,15 +560,17 @@ function openModal(poseId) {
     $('modal-breathing').textContent = breathingText;
     
     // Update recommended for
-    const recommendedForData = pose.recommendedFor ? pose.recommendedFor[currentLanguage === 'en' ? 'english' : 'malayalam'] : '';
-    const recommendedText = Array.isArray(recommendedForData) ? recommendedForData.join(' ') : recommendedForData;
+    const recommendedForData = pose.recommendedFor ? pose.recommendedFor[currentLanguage === 'en' ? 'english' : 'malayalam'] : [];
+    const recommendedText = Array.isArray(recommendedForData) 
+        ? recommendedForData.join('. ') + (recommendedForData.length > 0 ? '.' : '')
+        : (recommendedForData || '');
     $('modal-recommended').textContent = recommendedText;
     
     // Update contraindications
-    const contraindicationsText = pose.contraindications ? 
-        (Array.isArray(pose.contraindications) ? 
-            pose.contraindications.join(' ') : 
-            (pose.contraindications[currentLanguage === 'en' ? 'english' : 'malayalam'] || '')) : '';
+    const contraindicationsData = pose.contraindications ? pose.contraindications[currentLanguage === 'en' ? 'english' : 'malayalam'] : [];
+    const contraindicationsText = Array.isArray(contraindicationsData) 
+        ? contraindicationsData.join('. ') + (contraindicationsData.length > 0 ? '.' : '')
+        : (contraindicationsData || '');
     $('modal-contraindications').textContent = contraindicationsText;
     
     // Show modal
@@ -680,19 +682,8 @@ async function loadPoses() {
                 console.log('Sample pose English name:', poses[0].englishName);
             }
         } else {
-            // Fallback to fetch
-            console.log('Fetching yoga-poses.json...');
-            const response = await fetch('./yoga-poses.json');
-            console.log('Response status:', response.status);
-            
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            
-            console.log('Parsing JSON...');
-            const data = await response.json();
-            console.log('Data loaded successfully, poses count:', data.length);
-            poses = data;
+            // If no embedded data, show clear error message
+            throw new Error('Data not available. Please either:\n1. Use a local server: run "python server.py" and access http://localhost:8081/\n2. Or keep the poses-data.js file for direct file access');
         }
         
         // Validate data structure
@@ -720,8 +711,18 @@ async function loadPoses() {
         
         // Update loading text with more specific error
         const loadingText = $('loading-text');
-        loadingText.textContent = `Error: ${error.message}. Please check console for details.`;
-        loadingText.style.color = '#ff6b6b';
+        loadingText.innerHTML = `
+            <div style="text-align: center; max-width: 400px; margin: 0 auto;">
+                <h3 style="color: #ff6b6b; margin-bottom: 1rem;">⚠️ Data Loading Error</h3>
+                <p style="color: #ff6b6b; margin-bottom: 1rem;">${error.message}</p>
+                <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; font-size: 0.9rem; text-align: left;">
+                    <strong>Solutions:</strong><br>
+                    • Use local server: Run <code>python server.py</code><br>
+                    • Access via <code>http://localhost:8081/</code><br>
+                    • Or keep <code>poses-data.js</code> file for direct access
+                </div>
+            </div>
+        `;
     }
 }
 
