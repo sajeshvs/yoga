@@ -4,7 +4,7 @@ This is a standalone HTML/CSS/JavaScript version of the Yoga Asanas application 
 
 ## Features
 
-- ✅ 79 comprehensive yoga poses with bilingual support (English/Malayalam)
+- ✅ 80 comprehensive yoga poses with bilingual support (English/Malayalam)
 - ✅ Advanced search and filtering by difficulty level
 - ✅ Favorites system with localStorage persistence
 - ✅ Detailed pose modals with instructions, health benefits, and contraindications
