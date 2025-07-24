@@ -7,7 +7,7 @@ class CustomHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header('Content-Type', self.guess_type(self.path) + '; charset=utf-8')
         super().end_headers()
 
-PORT = 8080
+PORT = 8081
 Handler = CustomHTTPRequestHandler
 
 os.chdir('.')
