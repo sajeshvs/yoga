@@ -37,7 +37,7 @@ This is a standalone HTML/CSS/JavaScript version of the Yoga Asanas application 
 
 This standalone version maintains 100% feature parity with the original React/TypeScript version:
 
-- All 79 yoga poses with complete data
+- All 80 yoga poses with complete data
 - Bilingual translations (English/Malayalam)
 - Search functionality across pose names and descriptions
 - Difficulty level filtering (Beginner/Intermediate/Advanced)
